@@ -40,7 +40,7 @@ What `image` will be in `import image from "./dog.jpeg"`, depends on the chosen 
 #### dom
 
 ```javascript
-module.exports = {
+{
   webp: {
     srcset: "dog.webp",
     type: "image/webp"
@@ -59,13 +59,13 @@ module.exports = {
 #### fallbackPath
 
 ```javascript
-module.exports = "dog.jpeg"
+"dog.jpeg"
 ```
 
 #### paths
 
 ```javascript
-module.exports = {
+{
   webp: "dog.webp",
   fallback: "dog.jpeg"
 }
