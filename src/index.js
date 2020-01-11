@@ -101,7 +101,7 @@ export default function (source) {
         fallback: publicFallbackFileName,
       }
     }
-    callback(null, `module.exports = ${JSON.stringify(returnValue)}`)
+    callback(null, `export default ${JSON.stringify(returnValue)}`)
   }
   const fail = error => {
     callback(error)
