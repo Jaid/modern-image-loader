@@ -9,3 +9,5 @@ pngquant|`{strip: true}`|[`imagemin-pngquant`](https://www.npmjs.com/package/ima
 publicPath|as defined in Webpack config|Public path that is added to the front of file names in returned JavaScript value.
 webp|`{quality: 95, nearLossless: 50, sharpness: 5}`|[`imagemin-webp`](https://www.npmjs.com/package/imagemin-webp) options
 webpFileName|`[hash:8].[ext]`|Output file name. Can use webpack-specific placeholders. `[ext]` will be "webp".
+
+All options can be overwritten in any asset import by appending a query string.
