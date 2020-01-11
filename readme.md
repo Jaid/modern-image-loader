@@ -130,6 +130,8 @@ publicPath|as defined in Webpack config|Public path that is added to the front o
 webp|`{quality: 95, nearLossless: 50, sharpness: 5}`|[`imagemin-webp`](https://www.npmjs.com/package/imagemin-webp) options
 webpFileName|`[hash:8].[ext]`|Output file name. Can use webpack-specific placeholders. `[ext]` will be "webp".
 
+All options can be overwritten in any asset import by appending a query string.
+
 ## Installation
 <a href="https://npmjs.com/package/modern-image-loader"><img src="https://img.shields.io/badge/npm-modern--image--loader-C23039?style=flat-square&logo=npm" alt="modern-image-loader on npm"/></a>
 ```bash
