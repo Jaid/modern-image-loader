@@ -32,7 +32,10 @@ it("should run", async () => {
   await webpack(webpackConfig)
   const result = require(path.join(webpackConfig.output.path, "main.js")).default
   const srcPathRegex = /^\/static\/[\da-z]{8}\.[a-z]+$/
-  debugger
-  expect(result.cat.webp.src).toMatch(srcPathRegex)
-  expect(result.cat.fallback.src).toMatch(srcPathRegex)
+  expect(result.cat.webp.srcset).toMatch(srcPathRegex)
+  expect(result.cat.fallback.srcset).toMatch(srcPathRegex)
+  expect(result.cat.img.alt).toStrictEqual("Cat")
+  expect(result.dog.webp.srcset).toMatch(srcPathRegex)
+  expect(result.dog.fallback.srcset).toMatch(srcPathRegex)
+  expect(result.dog.img.alt).toStrictEqual("Dog")
 })

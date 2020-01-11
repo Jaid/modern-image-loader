@@ -1,0 +1,1 @@
+See [w3schools - `<picture>` tag](https://www.w3schools.com/tags/tag_picture.asp) to get an idea of when this loader can be useful.

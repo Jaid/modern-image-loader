@@ -1,5 +1,5 @@
-import cat from "./cat.png"
-import dog from "./dog.jpeg"
+import cat from "./cat.png?alt=Cat"
+import dog from "./dog.jpeg?alt=Dog"
 
 export default {
   cat,
