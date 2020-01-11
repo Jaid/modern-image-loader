@@ -1,0 +1,13 @@
+type: object
+additionalProperties: false
+properties:
+  sort:
+    type: boolean
+  randomPick:
+    type: boolean
+  trim:
+    type: boolean
+  unique:
+    type: boolean
+  nonEmpty:
+    type: boolean
