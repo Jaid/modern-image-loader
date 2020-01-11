@@ -2,6 +2,7 @@
 
 The default returned object makes it easy to be used in frameworks like React.
 
+`index.js`
 ```javascript
 import React from "react"
 import ReactDom from "react-dom"
@@ -20,17 +21,15 @@ ReactDom.render(<div className="main">
 This will render a DOM like this:
 
 ```html
-<html>
-  <body>
-    <div class="main">
-      <picture>
-        <source srcset="dog.webp" type="image/webp" />
-        <source srcset="dog.jpeg" type="image/jpeg" />
-        <img src="dog.jpeg" alt="Dog" />
-      </picture>
-    </div>
-  </body>
-</html>
+<body>
+  <div class="main">
+    <picture>
+      <source srcset="dog.webp" type="image/webp" />
+      <source srcset="dog.jpeg" type="image/jpeg" />
+      <img src="dog.jpeg" alt="Dog" />
+    </picture>
+  </div>
+</body>
 ```
 
 ### Export types
