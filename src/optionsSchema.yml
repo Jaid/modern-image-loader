@@ -1,13 +1,25 @@
 type: object
 additionalProperties: false
 properties:
-  sort:
-    type: boolean
-  randomPick:
-    type: boolean
-  trim:
-    type: boolean
-  unique:
-    type: boolean
-  nonEmpty:
-    type: boolean
+  webp:
+    type: object
+  pngquant:
+    type: object
+  jpegtran:
+    type: object
+  webpFileName:
+    type: string
+  fallbackFileName:
+    type: string
+  inputMime:
+    type: string
+  export:
+    enum: [dom, fallbackPath, paths]
+  alt:
+    anyOf:
+      - type: string
+      - type: "null"
+  publicPath:
+    anyOf:
+      - type: string
+      - type: "null"

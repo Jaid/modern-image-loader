@@ -6,7 +6,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.lines\.txt$/,
+        test: /\.(png|jpg|jpeg)$/,
         use: "modern-image-loader"
       }
     ]
@@ -18,19 +18,7 @@ Now you can import corresponding files in your entry script:
 
 `index.js`
 ```javascript
-import lines from "./example.lines.txt"
+import image from "./dog.jpeg"
 
-console.log(lines.length)
-```
-
-`example.lines.txt`
-```text
-maxine
-chloe
-rachel
-```
-
-Variable `lines` in `index.js` will look like this:
-```javascript
-["maxine", "chloe", "rachel"]
+console.log(image)
 ```

@@ -1,32 +1,72 @@
-All options can be set inline. Example:
+### React Example
 
-`index.js`
+The default returned object makes it easy to be used in frameworks like React.
+
 ```javascript
-import lines from "./example.lines.txt?nonEmpty=false"
-import linesNormalized from "./example.lines.txt?sort&unique"
+import React from "react"
+import ReactDom from "react-dom"
 
-console.log(lines.length)
-console.log(linesNormalized.length)
+import image from "./dog.jpeg?alt=Dog"
+
+ReactDom.render(<div className="main">
+  <picture>
+    <source {...image.webp}/>
+    <source {...image.fallback}/>
+    <img {...image.img}/>
+  </picture>
+</div>, document.body)
 ```
 
-`example.lines.txt`
-```text
-maxine
-chloe
+This will render a DOM like this:
 
-rachel
-
-
-chloe
-
+```html
+<html>
+  <body>
+    <div class="main">
+      <picture>
+        <source srcset="dog.webp" type="image/webp" />
+        <source srcset="dog.jpeg" type="image/jpeg" />
+        <img src="dog.jpeg" alt="Dog" />
+      </picture>
+    </div>
+  </body>
+</html>
 ```
 
-Variable `lines` in `index.js` will look like this:
+### Export types
+
+What `image` will be in `import image from "./dog.jpeg"`, depends on the chosen export type. It is `dom` by default.
+
+#### dom
+
 ```javascript
-["maxine", "chloe", "", "rachel", "", "", "chloe", ""]
+module.exports = {
+  webp: {
+    srcset: "dog.webp",
+    type: "image/webp"
+  },
+  fallback: {
+    srcset: "dog.jpeg",
+    type: "image/jpeg"
+  },
+  img: {
+    src: "dog.jpeg",
+    alt: "Dog"
+  }
+}
 ```
 
-Variable `linesNormalized` in `index.js` will look like this:
+#### fallbackPath
+
 ```javascript
-["chloe", "maxine", "rachel"]
+module.exports = "dog.jpeg"
+```
+
+#### paths
+
+```javascript
+module.exports = {
+  webp: "dog.webp",
+  fallback: "dog.jpeg"
+}
 ```
