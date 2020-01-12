@@ -14,6 +14,7 @@ See [w3schools - `<picture>` tag](https://www.w3schools.com/tags/tag_picture.asp
 
 
 
+
 ## Usage
 
 Add the loader to your Webpack config:
