@@ -42,5 +42,6 @@
     "prepareActionJest": "npm run build:prod"
   },
   "name": "modern-image-loader",
-  "description": "Webpack loader that outputs optimized WebP images with JPEG/PNG fallback and other neat extras."
+  "description": "Webpack loader that outputs optimized WebP images with JPEG/PNG fallback and other neat extras.",
+  "funding": "https://github.com/sponsors/jaid"
 }
