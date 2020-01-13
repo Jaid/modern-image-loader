@@ -1,9 +1,9 @@
 # modern-image-loader
 
 
-<a href="https://raw.githubusercontent.com/Jaid/modern-image-loader/master/license.txt"><img src="https://img.shields.io/github/license/Jaid/modern-image-loader?style=flat-square" alt="License"/></a>  
-<a href="https://actions-badge.atrox.dev/Jaid/modern-image-loader/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2FJaid%2Fmodern-image-loader%2Fbadge" alt="Build status"/></a> <a href="https://github.com/Jaid/modern-image-loader/commits"><img src="https://img.shields.io/github/commits-since/Jaid/modern-image-loader/v1.1.0?style=flat-square&logo=github" alt="Commits since v1.1.0"/></a> <a href="https://github.com/Jaid/modern-image-loader/commits"><img src="https://img.shields.io/github/last-commit/Jaid/modern-image-loader?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/Jaid/modern-image-loader/issues"><img src="https://img.shields.io/github/issues/Jaid/modern-image-loader?style=flat-square&logo=github" alt="Issues"/></a>  
-<a href="https://npmjs.com/package/modern-image-loader"><img src="https://img.shields.io/npm/v/modern-image-loader?style=flat-square&logo=npm&label=latest%20version" alt="Latest version on npm"/></a> <a href="https://github.com/Jaid/modern-image-loader/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/modern-image-loader?style=flat-square&logo=npm" alt="Dependents"/></a> <a href="https://npmjs.com/package/modern-image-loader"><img src="https://img.shields.io/npm/dm/modern-image-loader?style=flat-square&logo=npm" alt="Downloads"/></a>
+<a href="https://raw.githubusercontent.com/jaid/modern-image-loader/master/license.txt"><img src="https://img.shields.io/github/license/jaid/modern-image-loader?style=flat-square" alt="License"/></a> <a href="https://github.com/sponsors/jaid"><img src="https://img.shields.io/badge/<3-Sponsor-FF45F1?style=flat-square" alt="Sponsor modern-image-loader"/></a>
+<a href="https://actions-badge.atrox.dev/jaid/modern-image-loader/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2Fjaid%2Fmodern-image-loader%2Fbadge" alt="Build status"/></a> <a href="https://github.com/jaid/modern-image-loader/commits"><img src="https://img.shields.io/github/commits-since/jaid/modern-image-loader/v1.1.0?style=flat-square&logo=github" alt="Commits since v1.1.0"/></a> <a href="https://github.com/jaid/modern-image-loader/commits"><img src="https://img.shields.io/github/last-commit/jaid/modern-image-loader?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/jaid/modern-image-loader/issues"><img src="https://img.shields.io/github/issues/jaid/modern-image-loader?style=flat-square&logo=github" alt="Issues"/></a>  
+<a href="https://npmjs.com/package/modern-image-loader"><img src="https://img.shields.io/npm/v/modern-image-loader?style=flat-square&logo=npm&label=latest%20version" alt="Latest version on npm"/></a> <a href="https://github.com/jaid/modern-image-loader/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/modern-image-loader?style=flat-square&logo=npm" alt="Dependents"/></a> <a href="https://npmjs.com/package/modern-image-loader"><img src="https://img.shields.io/npm/dm/modern-image-loader?style=flat-square&logo=npm" alt="Downloads"/></a>
 
 **Webpack loader that outputs optimized WebP images with JPEG/PNG fallback and other neat extras.**
 
@@ -148,14 +148,13 @@ yarn add --dev modern-image-loader@^1.1.0
 
 
 
-
 ## Development
 
 
 
 Setting up:
 ```bash
-git clone git@github.com:Jaid/modern-image-loader.git
+git clone git@github.com:jaid/modern-image-loader.git
 cd modern-image-loader
 npm install
 ```
