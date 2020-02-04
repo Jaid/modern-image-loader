@@ -31,7 +31,7 @@ it("should run", async () => {
   }
   await webpack(webpackConfig)
   const result = require(path.join(webpackConfig.output.path, "main.js")).default
-  const srcPathRegex = /^\/static\/[\da-z]{8}\.[a-z]+$/
+  const srcPathRegex = /^\/static\/[\w-]{6}\.[a-z]+$/
   expect(result.cat.webp.srcset).toMatch(srcPathRegex)
   expect(result.cat.fallback.srcset).toMatch(srcPathRegex)
   expect(result.cat.img.alt).toStrictEqual("Cat")
