@@ -46,8 +46,8 @@ export default function (source) {
     webp: defaultWebpConfig,
     jpegtran: defaultJpegtranConfig,
     pngquant: defaultPngquantConfig,
-    webpFileName: "[hash:8].[ext]",
-    fallbackFileName: "[hash:8].[ext]",
+    webpFileName: "[hash:base64:6].[ext]",
+    fallbackFileName: "[hash:base64:6].[ext]",
     alt: null,
     export: "dom",
     // eslint-disable-next-line no-underscore-dangle
