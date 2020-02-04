@@ -1,7 +1,7 @@
 # modern-image-loader
 
 
-<a href="https://raw.githubusercontent.com/jaid/modern-image-loader/master/license.txt"><img src="https://img.shields.io/github/license/jaid/modern-image-loader?style=flat-square" alt="License"/></a> <a href="https://github.com/sponsors/jaid"><img src="https://img.shields.io/badge/<3-Sponsor-FF45F1?style=flat-square" alt="Sponsor modern-image-loader"/></a>
+<a href="https://raw.githubusercontent.com/jaid/modern-image-loader/master/license.txt"><img src="https://img.shields.io/github/license/jaid/modern-image-loader?style=flat-square" alt="License"/></a> <a href="https://github.com/sponsors/jaid"><img src="https://img.shields.io/badge/<3-Sponsor-FF45F1?style=flat-square" alt="Sponsor modern-image-loader"/></a>  
 <a href="https://actions-badge.atrox.dev/jaid/modern-image-loader/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2Fjaid%2Fmodern-image-loader%2Fbadge" alt="Build status"/></a> <a href="https://github.com/jaid/modern-image-loader/commits"><img src="https://img.shields.io/github/commits-since/jaid/modern-image-loader/v1.1.0?style=flat-square&logo=github" alt="Commits since v1.1.0"/></a> <a href="https://github.com/jaid/modern-image-loader/commits"><img src="https://img.shields.io/github/last-commit/jaid/modern-image-loader?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/jaid/modern-image-loader/issues"><img src="https://img.shields.io/github/issues/jaid/modern-image-loader?style=flat-square&logo=github" alt="Issues"/></a>  
 <a href="https://npmjs.com/package/modern-image-loader"><img src="https://img.shields.io/npm/v/modern-image-loader?style=flat-square&logo=npm&label=latest%20version" alt="Latest version on npm"/></a> <a href="https://github.com/jaid/modern-image-loader/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/modern-image-loader?style=flat-square&logo=npm" alt="Dependents"/></a> <a href="https://npmjs.com/package/modern-image-loader"><img src="https://img.shields.io/npm/dm/modern-image-loader?style=flat-square&logo=npm" alt="Downloads"/></a>
 
@@ -10,6 +10,27 @@
 
 See [w3schools - `<picture>` tag](https://www.w3schools.com/tags/tag_picture.asp) to get an idea of when this loader can be useful.
 
+
+## Installation
+
+<a href="https://npmjs.com/package/modern-image-loader"><img src="https://img.shields.io/badge/npm-modern--image--loader-C23039?style=flat-square&logo=npm" alt="modern-image-loader on npm"/></a>
+
+```bash
+npm install --save-dev modern-image-loader@^1.1.0
+```
+
+<a href="https://yarnpkg.com/package/modern-image-loader"><img src="https://img.shields.io/badge/Yarn-modern--image--loader-2F8CB7?style=flat-square&logo=yarn&logoColor=white" alt="modern-image-loader on Yarn"/></a>
+
+```bash
+yarn add --dev modern-image-loader@^1.1.0
+```
+
+<a href="https://github.com/jaid/modern-image-loader/packages"><img src="https://img.shields.io/badge/GitHub Packages-@jaid/modern--image--loader-24282e?style=flat-square&logo=github" alt="@jaid/modern-image-loader on GitHub Packages"/></a>  
+(if [configured properly](https://help.github.com/en/github/managing-packages-with-github-packages/configuring-npm-for-use-with-github-packages))
+
+```bash
+npm install --save-dev @jaid/modern-image-loader@^1.1.0
+```
 
 
 
@@ -122,25 +143,15 @@ Option|Default|Description
 ---|---|---
 alt||Value for `alt` tag
 export|`domProperties`|Format of returned JavaScript value. Valid formats: `dom`, `fallbackPath`, `paths`
-fallbackFileName|`[hash:8].[ext]`|Output file name. Can use webpack-specific placeholders. `[ext]` will be based on input file type.
+fallbackFileName|`[hash:base64:6]`|Output file name. Can use webpack-specific placeholders. `[ext]` will be based on input file type.
 inputMime|auto|Mime type of input file. You probably do not want to set this, as it is automatically determined based on input file extension.
 jpegtran|`{}`|[`imagemin-jpegtran`](https://www.npmjs.com/package/imagemin-jpegtran) options
 pngquant|`{strip: true}`|[`imagemin-pngquant`](https://www.npmjs.com/package/imagemin-pngquant) options
 publicPath|as defined in Webpack config|Public path that is added to the front of file names in returned JavaScript value.
 webp|`{quality: 95, nearLossless: 50, sharpness: 5}`|[`imagemin-webp`](https://www.npmjs.com/package/imagemin-webp) options
-webpFileName|`[hash:8].[ext]`|Output file name. Can use webpack-specific placeholders. `[ext]` will be "webp".
+webpFileName|`[hash:base64:6]`|Output file name. Can use webpack-specific placeholders. `[ext]` will be "webp".
 
 All options can be overwritten in any asset import by appending a query string.
-
-## Installation
-<a href="https://npmjs.com/package/modern-image-loader"><img src="https://img.shields.io/badge/npm-modern--image--loader-C23039?style=flat-square&logo=npm" alt="modern-image-loader on npm"/></a>
-```bash
-npm install --save-dev modern-image-loader@^1.1.0
-```
-<a href="https://yarnpkg.com/package/modern-image-loader"><img src="https://img.shields.io/badge/Yarn-modern--image--loader-2F8CB7?style=flat-square&logo=yarn&logoColor=white" alt="modern-image-loader on Yarn"/></a>
-```bash
-yarn add --dev modern-image-loader@^1.1.0
-```
 
 
 
