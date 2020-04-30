@@ -49,5 +49,16 @@
     "url": "https://github.com/jaid/modern-image-loader"
   },
   "homepage": "https://github.com/Jaid/modern-image-loader",
-  "keywords": []
+  "keywords": [
+    "dom",
+    "image",
+    "img",
+    "loader",
+    "picture",
+    "react",
+    "react-dom",
+    "webpack",
+    "webpack-loader",
+    "webpack-plugin"
+  ]
 }
