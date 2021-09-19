@@ -60,5 +60,6 @@
     "webpack",
     "webpack-loader",
     "webpack-plugin"
-  ]
+  ],
+  "type": "module"
 }
